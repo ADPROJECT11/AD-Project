@@ -34,6 +34,10 @@ Route::get('/cusmenu', function () {
     return view ('cusmenu');
 });
 
+Route::get('/reservation_cus', function () {
+    return view ('reservation_cus');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
