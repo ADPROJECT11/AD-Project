@@ -66,6 +66,7 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 22px;
+    margin-left: 5%;
 }
 
 #p4{
@@ -73,8 +74,8 @@ p{
     color: #CF71EF;
     font-weight: bold;
     font-size: 39px;
-    margin-bottom: 35%;
     margin-right: 20%;
+    margin-bottom: 20%;
 }
 
 #p5{
