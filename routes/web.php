@@ -38,6 +38,9 @@ Route::get('/reservation_cus', function () {
     return view ('reservation_cus');
 });
 
+Route::get('/reservation_cus2', function () {
+    return view ('reservation_cus2');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

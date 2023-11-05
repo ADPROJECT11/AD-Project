@@ -231,24 +231,35 @@ input{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-#tab{
+label{
     margin: 0%;
-    font-weight:30;
-    font-size: 15;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    font-size: 18px;
     margin-top: 2%;
-    margin-bottom: 5%;
-    justify-content: left;
-    margin-left: 6%;
+    margin-left: 8%;
+}
+
+#table{
+    margin: 0%;
+    height:43px;
+    width: 150%;
+    border-radius: 20px;
+    border: 2px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 13%;
+    margin-left: 3%;
 }
 
 #sea{
     margin: 0%;
     font-weight:30;
-    font-size: 15;
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-top: 0%;
+    margin-bottom: 8%;
     justify-content: left;
     margin-left: 6%;
 }

@@ -44,10 +44,12 @@
                 </div>
               </div>
               <div class="tableseat">
-                <div><p id="tab">Table:</p>
-                  <div class="table">
-                    <input id="input1" type="text" required>
-                  </div>
+              <div>
+                  <label for="table">Table:</label>
+                    <select id="table">
+                      <option value="Large">Large</option>
+                      <option value="Small">Small</option>
+                    </select>
                 </div>
                 <div><p id="sea">Seats:</p>
                   <div class="seats">
