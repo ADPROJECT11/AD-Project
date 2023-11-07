@@ -42,6 +42,10 @@ Route::get('/reservation_cus2', function () {
     return view ('reservation_cus2');
 });
 
+Route::get('/reservation_cus3', function () {
+    return view ('reservation_cus3');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
