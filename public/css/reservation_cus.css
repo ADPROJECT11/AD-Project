@@ -41,7 +41,7 @@ p{
 
 .content{
     background-color: #EFECF0;
-    height: 91%;
+    height: 92%;
 }
 
 .empty1{
@@ -157,9 +157,8 @@ p{
 
 p2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:30;
-    font-size: 15;
     font-weight: bold;
+    font-size: 18px;
     margin-left: 10px;
 }
 
@@ -167,6 +166,7 @@ p2{
     margin-left: 1.5%;
     margin-top: 8%;
 }
+
 input{
     height:40px;
     width: 96.5%;
@@ -176,13 +176,21 @@ input{
 }
 
 .name{
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 5%;
     display: flex;
 }
 
+#thename{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    font-size: large;
+}
+
 .mobile{
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 5%;
     display: flex;
 }
@@ -196,6 +204,7 @@ input{
 #phone{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
+    font-weight: bold;
 }
 
 .tableseat{
@@ -205,13 +214,14 @@ input{
 }
 
 .table{
-    margin-top: 2%;
+    margin-top: 10%;
     display: flex;
 }
 
 .seats{
-    margin-right: 5%;
-    margin-top: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-left: 30%;
     display: flex;
 }
 
@@ -220,15 +230,20 @@ input{
     width: 150%;
     border-radius: 20px;
     border: 2px solid;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2%;
 }
 
 #input2{
     height:40px;
-    width: 150%;
+    width: 95%;
     border-radius: 20px;
     border: 2px solid;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    font-size: large;
 }
 
 label{
@@ -249,7 +264,7 @@ label{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 15px;
-    margin-top: 13%;
+    margin-top: 18%;
     margin-left: 3%;
 }
 
@@ -261,7 +276,7 @@ label{
     margin-top: 0%;
     margin-bottom: 8%;
     justify-content: left;
-    margin-left: 6%;
+    margin-left: 35%;
 }
 
 input[type="submit"]{
@@ -287,7 +302,7 @@ input[type="submit"]:hover{
 }
 
 .submit{
-    margin-top: 15%;
+    margin-top: 10%;
     margin-right: 2%;
 }
 

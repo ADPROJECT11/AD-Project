@@ -34,13 +34,13 @@
             <form>
               <div><p2>Name:</p2>
                 <div class="name">
-                  <input type="text" required>
+                  <input type="text" id="thename" required>
                 </div>
               </div>
               <div><p2>Mobile Number:</p2>
                 <div class="mobile">
                   <!--<img src="{{ asset('image/flag.png')}}" width="20px" height="20px">-->
-                  <input type="text" id="phone" placeholder="+60" required>
+                  <input type="text" id="phone" value="+60" required>
                 </div>
               </div>
               <div class="tableseat">
