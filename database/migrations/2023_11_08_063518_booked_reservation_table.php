@@ -15,7 +15,6 @@ return new class extends Migration
             $table->string('id', 5);
             $table->string('name', 100);
             $table->string('mobile',15);
-            $table->timestamps();
         });
     }
 

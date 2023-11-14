@@ -31,7 +31,8 @@
         <div class="box2">
           <p id="p10">Personal Information</p>
           <div class="form">
-            <form method="post" action="dbsave">
+            <form method="get">
+            <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
               <div><p2>Name:</p2>
                 <div class="name">
                   <input type="text" id="thename" required>
