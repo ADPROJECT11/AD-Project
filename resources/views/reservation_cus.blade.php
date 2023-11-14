@@ -31,7 +31,7 @@
         <div class="box2">
           <p id="p10">Personal Information</p>
           <div class="form">
-            <form>
+            <form method="post" action="dbsave">
               <div><p2>Name:</p2>
                 <div class="name">
                   <input type="text" id="thename" required>
@@ -61,7 +61,7 @@
                 <input type="submit" value="Comfirm Booking">
               </div>
             </form>
-        </div>
   </div>
 </body>
 </html>
+
