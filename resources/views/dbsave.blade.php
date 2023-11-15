@@ -16,7 +16,39 @@ $menuItems = [
 foreach ($menuItems as $menuItem) {
     DB::insert('INSERT INTO menu (id, foodname, description, price, categories) VALUES (?, ?, ?, ?, ?)', $menuItem);
 }
+
+
+$userData = [
+    ['john_doe', 'password123', 'user'],
+    ['admin_user', 'adminpassword', 'admin'],
+    ['jane_smith', 'securepass', 'user'],
+    ['alice_jones', 'p@ssw0rd', 'user'],
+    ['bob_miller', 'secret123', 'user'],
+    ['emily_wang', 'strongpass', 'user'],
+    ['david_clark', 'password456', 'user'],
+    ['susan_smith', 'susanpass', 'user'],
+    ['ryan_carter', 'ryan123', 'user'],
+    ['olivia_brown', 'olivia_pass', 'user'],
+    ['michael_white', 'mikepass', 'user'],
+    ['emma_jones', 'emmajpass', 'user'],
+    ['matthew_davis', 'matthewpass', 'user'],
+    ['sophia_miller', 'sophiapass', 'user'],
+    ['william_taylor', 'williampass', 'user'],
+    ['ava_anderson', 'avapass', 'user'],
+    ['james_jackson', 'jamespass', 'user'],
+    ['amelia_wilson', 'ameliapass', 'user'],
+    ['samuel_hall', 'sampass', 'user'],
+    ['grace_martin', 'gracepass', 'user'],
+];
+
+foreach ($userData as $user) {
+    DB::insert('INSERT INTO user (username, password, Roles) VALUES (?, ?, ?)', $user);
+}
+
+
 ?>
+
+
 
 
 

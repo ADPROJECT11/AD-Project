@@ -57,3 +57,6 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 });
+
+Route::post('staffmenu', [ConfirmablePasswordController::class, 'show'])
+                ->name('password.confirm');
