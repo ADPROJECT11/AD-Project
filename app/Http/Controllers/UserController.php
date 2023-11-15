@@ -9,6 +9,6 @@ class UserController extends Controller
     //
     function testRequest(Request $request)
     {
-        return view("staffmenu");
+        return view("account");
     }
 }
