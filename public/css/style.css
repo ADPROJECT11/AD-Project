@@ -1,5 +1,9 @@
+html{
+    height: 100%;
+}
 body{
     margin: 0px;
+    height: 100%;
 }
 
 .topbar{
@@ -21,8 +25,8 @@ body{
     background-color: #EFECF0;
 }
 
-.empty{
-    height:15%
+.empp{
+    height:10%;
 }
 
 p{
@@ -31,12 +35,12 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#p1{
+#login{
     font-weight: bold;
-    font-size: 39;
+    font-size: 39px;
 }
 
-#p2{
+#signin{
     font-weight:normal;
     font-size: 15;
     color: #858282;
