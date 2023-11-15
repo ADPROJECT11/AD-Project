@@ -54,6 +54,14 @@ Route::get('/menulist', function () {
     return view ('menulist');
 });
 
+Route::get('/adminmenu', function () {
+    return view('adminmenu');
+});
+
+Route::get('/account', function () {
+    return view('account');
+});
+
 Route::get('staffmenu', [UserController::class,'testRequest']);
 
 
