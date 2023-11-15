@@ -54,6 +54,14 @@ Route::get('/reservation_staff', function () {
     return view ('reservation_staff');
 });
 
+Route::get('/menulist', function () {
+    return view ('menulist');
+});
+
+Route::get('/viewcart', function () {
+    return view ('viewcart');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 
