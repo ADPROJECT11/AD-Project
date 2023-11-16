@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/account.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Load icon library -->
     <title>MenuList</title>
 </head>
@@ -18,7 +19,7 @@
                 <div id="i3"><a href="account"><img src="{{ asset('image/account.png')}}" width="35px" height="35px"><u id= "icon">Account</u></a></div>
             </div>
             <div class="logout">
-                <a href= "login1"><img src="{{ asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
+                <a href= "logout"><img src="{{ asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
             </div>
         </div>
     </div>
@@ -28,7 +29,7 @@
             <div class="createacc"><a href="createuser">Create Account</a></div>
             <div class="search">
                 <!-- The form -->
-                <form id="example" action="staffmenu" method="GET">
+                <form id="example" action="account" method="get">
                     <input id="searchbar" type="text" placeholder="Search by name.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
@@ -65,6 +66,7 @@
                     }
                 ?>
             </table>
+            <?php echo session('user')?>
         </div>
     </div>
 

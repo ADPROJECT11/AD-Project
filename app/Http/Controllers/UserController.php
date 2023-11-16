@@ -11,4 +11,9 @@ class UserController extends Controller
     {
         return view("account");
     }
+
+    function test(Request $request)
+    {
+        return view("testing1");
+    }
 }

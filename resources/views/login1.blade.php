@@ -38,12 +38,13 @@
     </div>
     <div class="empty2"></div>
     <div class="form">
-      <form>
+      <form method="post" action="heng">
+        @csrf
         <div>
           <p2>Username</p2><br />
           <div class="username">
             <img src="{{ asset('image/username.png')}}" width="35px" height="35px">
-            <input type="text" required>
+            <input type="text" name="username" required>
           </div>
         </div>
         <br />
@@ -51,7 +52,7 @@
           <p2>Password</p2><br />
           <div class="password">
             <img src="{{ asset('image/password.png')}}" width="35px" height="35px">
-            <input type="password" required>
+            <input type="password" name="password" required>
           </div>
         </div>
         <div class="submit">

@@ -1,8 +1,9 @@
 <?php
-
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\loginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +28,9 @@ Route::get('/dbsave', function () {
 });
 
 Route::get('/login1', function () {
+    if(session()->has('user')){
+        return redirect('account');
+    }
     return view('login1');
 });
 
@@ -46,10 +50,6 @@ Route::get('/createuser', function () {
     return view ('createuser');
 });
 
-Route::get('/staffmenu', function () {
-    return view ('staffmenu');
-});
-
 Route::get('/menulist', function () {
     return view ('menulist');
 });
@@ -62,7 +62,28 @@ Route::get('/account', function () {
     return view('account');
 });
 
-Route::get('staffmenu', [UserController::class,'testRequest']);
+Route::get('/testing1', function () {
+    return view('testing1');
+});
+
+Route::get('/addmenu', function () {
+    return view('addmenu');
+});
+
+
+
+Route::get('account', [UserController::class,'testRequest']);
+//Route::post('testing', [UserController::class,'test']);
+Route::get('testing', [PhotoController::class, 'create']);
+Route::post('testing', [PhotoController::class,'store']);
+Route::post('heng', [loginController::class,'login']);
+
+Route::get('logout', function () {
+    if(session()->has('user')){
+        session()->pull('user');
+    }
+    return redirect('login1');
+});
 
 
 Route::get('/dashboard', function () {
