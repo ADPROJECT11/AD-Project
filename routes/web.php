@@ -58,8 +58,8 @@ Route::get('/menulist', function () {
     return view ('menulist');
 });
 
-Route::get('/viewcart', function () {
-    return view ('viewcart');
+Route::get('/cart', function () {
+    return view ('cart');
 });
 
 Route::get('/dashboard', function () {
