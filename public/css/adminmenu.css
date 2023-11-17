@@ -229,6 +229,17 @@ i{
     border-radius: 20px;
 }
 
+.picture img{
+    grid-column: 1/2 ;
+    border:2px solid;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
 .nopicture{
     grid-column: 2/11;
     margin: 0 2% 0 2%;

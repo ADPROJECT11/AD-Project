@@ -14,7 +14,7 @@
         <div class="whitearea">
             <div class = "molekcafe" id="molekcafe">Molek</br>Cafe</div>
             <div class = "icon">
-                <div id="i1"><a href="#"><img src="{{ asset('image/reservation.png')}}" width="35px" height="35px"><u id = "icon">Dashboard</u></a></div>
+                <div id="i1"><a href="dashboard"><img src="{{ asset('image/reservation.png')}}" width="35px" height="35px"><u id = "icon">Dashboard</u></a></div>
                 <div id="i2"><a href="adminmenu"><img src="{{ asset('image/menu.png')}}" width="35px" height="35px"><u id = "icon">Menu</u></a></div>
                 <div id="i3"><a href="account"><img src="{{ asset('image/account.png')}}" width="35px" height="35px"><u id= "icon">Account</u></a></div>
             </div>
@@ -66,7 +66,6 @@
                     }
                 ?>
             </table>
-            <?php echo session('user')?>
         </div>
     </div>
 

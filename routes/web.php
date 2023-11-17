@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\MenuController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -76,7 +77,9 @@ Route::get('account', [UserController::class,'testRequest']);
 //Route::post('testing', [UserController::class,'test']);
 Route::get('testing', [PhotoController::class, 'create']);
 Route::post('testing', [PhotoController::class,'store']);
-Route::post('heng', [loginController::class,'login']);
+Route::post('loginn', [loginController::class,'login']);
+Route::post('menu', [MenuController::class,'save']);
+
 
 Route::get('logout', function () {
     if(session()->has('user')){
@@ -88,14 +91,4 @@ Route::get('logout', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-
-    
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-require __DIR__ . '/auth.php';

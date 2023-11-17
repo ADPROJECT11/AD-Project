@@ -38,7 +38,7 @@
     </div>
     <div class="empty2"></div>
     <div class="form">
-      <form method="post" action="heng">
+      <form method="post" action="loginn">
         @csrf
         <div>
           <p2>Username</p2><br />

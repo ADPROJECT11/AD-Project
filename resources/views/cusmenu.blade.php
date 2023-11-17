@@ -24,13 +24,13 @@
         </div>
         <div class="whitearea">
         <?php
-            $sql = DB::table('menu')
+            $sql = DB::table('menus')
             ->where('categories', '=', 'food')
             ->get();
             echo "<div id='food'>Food</div>"; //food subtitle
             foreach ($sql as $food){
                 echo "<div class='box'>";
-                    echo "<div class='picture'>picture</div>";
+                    echo "<div class='picture'><img src='storage/image/$food->image_url'></div>";
                     echo "<div class='nopicture'>";
                         echo "<div class='foodandpricebox'>";
                             echo "<div class='food'>" . $food->id . '. ' . $food->foodname ."</div>";
@@ -42,13 +42,13 @@
             }
             echo "</br>";
 
-            $sql = DB::table('menu') //get the beverage list
+            $sql = DB::table('menus') //get the beverage list
             ->where('categories', '=', 'beverages')
             ->get();
             echo "<div id='beverage'>Beverages</div>"; //beverage subtitle
             foreach ($sql as $food){
                 echo "<div class='box'>";
-                    echo "<div class='picture'>picture</div>";
+                    echo "<div class='picture'><img src='storage/image/$food->image_url'></div>";
                     echo "<div class='nopicture'>";
                         echo "<div class='foodandpricebox'>";
                             echo "<div class='food'>" . $food->id . '. ' . $food->foodname ."</div>";
@@ -60,14 +60,14 @@
             }
             echo "</br>";
 
-            $sql = DB::table('menu') //get the beverage list
+            $sql = DB::table('menus') //get the beverage list
             ->where('categories', '!=', 'food')
             ->where('categories', '!=', 'beverages')
             ->get();
             echo "<div id='others'>Others</div>"; //Others subtitle
             foreach ($sql as $food){
                 echo "<div class='box'>";
-                    echo "<div class='picture'>picture</div>";
+                    echo "<div class='picture'><img src='storage/image/$food->image_url'></div>";
                     echo "<div class='nopicture'>";
                         echo "<div class='foodandpricebox'>";
                             echo "<div class='food'>" . $food->id . '. ' . $food->foodname ."</div>";

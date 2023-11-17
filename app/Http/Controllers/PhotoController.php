@@ -14,6 +14,7 @@ class PhotoController extends Controller
 
     public function store(Request $request)
     {
+        dd($request->file());
         $size = $request->file('my_image')->getSize();
         $name = $request->file('my_image')->getClientOriginalName();
         $request->file('my_image')->storeAs('public/image/', $name);

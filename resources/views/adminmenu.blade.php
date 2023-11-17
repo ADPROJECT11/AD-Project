@@ -13,12 +13,12 @@
         <div class="whitearea">
             <div class = "molekcafe" id="molekcafe">Molek</br>Cafe</div>
             <div class = "icon">
-                <div id="i1"><a href="#"><img src="{{ asset('image/reservation.png')}}" width="35px" height="35px"><u id = "icon">Dashboard</u></a></div>
+                <div id="i1"><a href="dashboard"><img src="{{ asset('image/reservation.png')}}" width="35px" height="35px"><u id = "icon">Dashboard</u></a></div>
                 <div id="i2"><a href="adminmenu"><img src="{{ asset('image/menu.png')}}" width="35px" height="35px"><u id = "icon">Menu</u></a></div>
                 <div id="i3"><a href="account"><img src="{{ asset('image/account.png')}}" width="35px" height="35px"><u id= "icon">Account</u></a></div>
             </div>
             <div class="logout">
-                <a href= "login1"><img src="{{ asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
+                <a href= "logout"><img src="{{ asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
             </div>
             <div class="white">
             <?php
-                $sql = DB::table('menu')
+                $sql = DB::table('menus')
                 ->where('categories', '=', 'food')
                 ->get();
                 echo "<div class='foodbox'>";
@@ -47,7 +47,7 @@
                 echo "</div>";
                 foreach ($sql as $food){
                     echo "<div class='box'>";
-                        echo "<div class='picture'>picture</div>";
+                        echo "<div class='picture'><img src='storage/image/$food->image_url'></div>";
                         echo "<div class='nopicture'>";
                             echo "<div class='foodandpricebox'>";
                                 echo "<div class='food'>" . $food->id . '. ' . $food->foodname ."</div>";
@@ -59,13 +59,13 @@
                 }
                 echo "</br>";
 
-                $sql = DB::table('menu') //get the beverage list
+                $sql = DB::table('menus') //get the beverage list
                 ->where('categories', '=', 'beverages')
                 ->get();
                 echo "<div id='beverage'>Beverages</div>"; //beverage subtitle
                 foreach ($sql as $food){
                     echo "<div class='box'>";
-                        echo "<div class='picture'>picture</div>";
+                        echo "<div class='picture'><img src='storage/image/$food->image_url'></div>";
                         echo "<div class='nopicture'>";
                             echo "<div class='foodandpricebox'>";
                                 echo "<div class='food'>" . $food->id . '. ' . $food->foodname ."</div>";
@@ -77,14 +77,14 @@
                 }
                 echo "</br>";
 
-                $sql = DB::table('menu') //get the beverage list
+                $sql = DB::table('menus') //get the beverage list
                 ->where('categories', '!=', 'food')
                 ->where('categories', '!=', 'beverages')
                 ->get();
                 echo "<div id='others'>Others</div>"; //Others subtitle
                 foreach ($sql as $food){
                     echo "<div class='box'>";
-                        echo "<div class='picture'>picture</div>";
+                        echo "<div class='picture'><img src='storage/image/$food->image_url'></div>";
                         echo "<div class='nopicture'>";
                             echo "<div class='foodandpricebox'>";
                                 echo "<div class='food'>" . $food->id . '. ' . $food->foodname ."</div>";
