@@ -16,6 +16,6 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "@headlessui/react": "^1.7.17"
+        "flowbite": "^2.0.0"
     }
 }

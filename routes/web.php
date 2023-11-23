@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,45 +23,46 @@ Route::get('/testing', function () {
 });
 
 Route::get('/dbsave', function () {
-    return view ('dbsave');
+    return view('dbsave');
 });
 
 Route::get('/login1', function () {
-    return view ('login1');
+    return view('login1');
 });
 
 Route::get('/cusmenu', function () {
-    return view ('cusmenu');
+    return view('cusmenu');
+});
+
+Route::get('/food', function () {
+    return view('food');
 });
 
 Route::get('/viewcart', function () {
-    return view ('viewcart');
+    return view('cart');
 });
 
-Route::get('/createuser', function () {
-    return view ('createuser');
+Route::get('/phptest', function () {
+    return view('cart2');
 });
 
-Route::get('/staffmen', function () {
-    return view ('staffmen');
+Route::get('/dbtest', function () {
+    return view('phpdbcart');
 });
 
-Route::get('/staffmenu', function () {
-    return view ('staffmenu');
+Route::post('/posttest', function () {
+    return view('dbtesting');
 });
 
-Route::get('/menulist', function () {
-    return view ('menulist');
+Route::get('/dashboard2', function () {
+    return view('dashboard2');
 });
 
-Route::get('staffmenu', [UserController::class,'testRequest']);
-
-
+/*
 Route::get('/dashboard', function () {
     return view('dashboard');
-
-    
 })->middleware(['auth', 'verified'])->name('dashboard');
+*/
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -69,4 +70,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
