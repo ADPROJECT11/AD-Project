@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user', function (Blueprint $table) {
-            $table->id("id")->autoIncrement;
-            $table->string("username", 20)->unique();
-            $table->string("password", 20)->unique();
-            $table->string("Roles",10);
+        Schema::create('tests', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -25,7 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user');
-        Schema::dropIfExists('cart');
+        Schema::dropIfExists('tests');
     }
 };

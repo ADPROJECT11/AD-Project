@@ -24,7 +24,7 @@
         </div>
         <div class="whitearea">
         <?php
-            $sql = DB::table('menu')
+            $sql = DB::table('menus')
             ->where('categories', '=', 'food')
             ->get();
             echo "<div id='food'>Food</div>"; //food subtitle
@@ -42,7 +42,7 @@
             }
             echo "</br>";
 
-            $sql = DB::table('menu') //get the beverage list
+            $sql = DB::table('menus') //get the beverage list
             ->where('categories', '=', 'beverages')
             ->get();
             echo "<div id='beverage'>Beverages</div>"; //beverage subtitle
@@ -60,7 +60,7 @@
             }
             echo "</br>";
 
-            $sql = DB::table('menu') //get the beverage list
+            $sql = DB::table('menus') //get the beverage list
             ->where('categories', '!=', 'food')
             ->where('categories', '!=', 'beverages')
             ->get();

@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Reservation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReservationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,6 +63,8 @@ Route::get('/menulist', function () {
 Route::get('/cart', function () {
     return view ('cart');
 });
+
+Route::post('reservation', [ReservationController::class,'save']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
