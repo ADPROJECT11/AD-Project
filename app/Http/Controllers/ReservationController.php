@@ -21,7 +21,6 @@ class ReservationController extends Controller
         $Reservation->table=$table;
         $Reservation->seats=$seats;
         $Reservation->save();
-        return redirect()->back();
-        
+        return redirect()->route('reservation_cus2');
     }
 }

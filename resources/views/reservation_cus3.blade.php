@@ -1,3 +1,29 @@
+<?php
+    //date
+    $sql = DB::table('reservations')->get();
+    $current_time = strftime('%d. %b. %Y- %X');
+
+    //table
+    // Get all reservations with table 'Large'
+    $large_reservations = DB::table('reservations')->where('table', 'Large')->orderBy('created_at', 'desc')->get();
+    // Get all reservations with table 'Small'
+    $small_reservations = DB::table('reservations')->where('table', 'Small')->orderBy('created_at', 'desc')->get();
+    if (!$large_reservations->isEmpty()) {
+        $table = 'Large';
+    } elseif (!$small_reservations->isEmpty()) {
+        $table = 'Small';
+    } else {
+        $table = 'No reservation found';
+    }
+
+    //seats and phone
+    $reservations = DB::table('reservations')->get();
+    $sortedReservations = $reservations->sortByDesc(function ($reservation) {
+    return strtotime($reservation->created_at);
+    });
+    $newestReservation = $sortedReservations->first();
+  ?>
+
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +42,27 @@
         <div class="middlebox">
             <div class="firstrow">
                 <p id="p6">Time</p>
-                <p id="p7">2023-10-25 10:33pm</p>
+                <?php
+                echo "<p id='p7'>" . $current_time . "</p>";
+                ?>
             </div>
             <div class="secondrow">
                 <p id="p8">Table</p>
-                <p id="p9">Large</p>
+                <?php
+                echo "<p id='p9'>" . $table . "</p>";
+                ?>
             </div>
             <div class="thirdrow">
                 <p id="p10">Seats</p>
-                <p id="p11">8</p>
+                <?php
+                echo "<p id='p11'>" . $newestReservation->seats . "</p>";
+                ?>
             </div>
             <div class="forthrow">
-                <p id="p12">Reservation number</p>
-                <p id="p13">A28</p>
+                <p id="p12">Phone number</p>
+                <?php
+                echo "<p id='p13'>" . $newestReservation->mobile . "</p>";
+                ?>
             </div>
         </div>
         <div class="smallbox">

@@ -140,7 +140,7 @@ p{
 .box2{
     margin-left: 2%;
     margin-right: 2%;
-    height:60%;
+    height:58%;
     border-radius: 20px;
     border: 3px solid;
     border-color: #707070;
@@ -156,7 +156,7 @@ p{
     margin-top: 5%;
 }
 
-p2{
+.p2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 18px;
