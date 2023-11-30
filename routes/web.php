@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/testing', function () {
     return view('testing');
 });
@@ -30,7 +26,7 @@ Route::get('/login1', function () {
     return view('login1');
 });
 
-Route::get('/cusmenu', function () {
+Route::get('/', function () {
     return view('cusmenu');
 });
 
@@ -43,7 +39,7 @@ Route::get('/viewcart', function () {
 });
 
 Route::get('/phptest', function () {
-    return view('cart2');
+    return view('cart1');
 });
 
 Route::get('/dbtest', function () {
@@ -54,8 +50,16 @@ Route::post('/posttest', function () {
     return view('dbtesting');
 });
 
-Route::get('/dashboard2', function () {
-    return view('dashboard2');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/dashboard1', function () {
+    return view('adminmenu');
+});
+
+Route::get('/dashboard3', function () {
+    return view('dashboardtest');
 });
 
 /*

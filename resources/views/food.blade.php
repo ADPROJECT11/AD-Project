@@ -103,7 +103,7 @@
             </div>
 
             <hr class="w-full mx-auto my-3 h-1 bg-gray-200 border-0 rounded">
-            
+
             <div class="w-full">
                 <h2 class="text-xl font-bold">Special Request</h1>
                     <p class="text-sm text-gray-600">Please let us know if you are allergic to any anything or require us to avoid anything.</p>
