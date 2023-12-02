@@ -58,8 +58,8 @@ Route::get('/dashboard1', function () {
     return view('adminmenu');
 });
 
-Route::get('/dashboard3', function () {
-    return view('dashboardtest');
+Route::get('/dashboard/sales', function () {
+    return view('sales');
 });
 
 /*

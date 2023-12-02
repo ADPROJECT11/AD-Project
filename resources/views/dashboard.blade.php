@@ -23,7 +23,7 @@
     </style>
     @vite(['resources/css/app.css','resources/js/app.js'])
     <!-- Load icon library -->
-    <title>MenuList</title>
+    <title>Dashboard</title>
 </head>
 
 <body class="bg-gray-200">
@@ -55,7 +55,7 @@
                                 </svg>
                             </button>
                             <div id="dropdownSale" class="z-10 hidden bg-gray-100 rounded-lg shadow">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
+                                <a href="/dashboard/sales" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
                             </div>
                         </div>
                         <p class="text-base text-gray-600">Total sales of this month</p>
@@ -104,13 +104,16 @@
                 <div class="flex flex-col px-6 py-6 bg-white shadow-md w-full rounded-xl">
                     <div class="w-full flex justify-between items-center">
                         <h1 class="text-2xl font-bold">Profit of Months</h1>
-                        <button type="button">
+                        <button type="button" id="profitMonthButton" data-dropdown-toggle="dropdownProfitMonth">
                             <svg class="w-8 h-8 fill-gray-400" viewBox="0 0 50 50">
                                 <circle cx="20" cy="20" r="5"></circle>
                                 <circle cx="5" cy="20" r="5"></circle>
                                 <circle cx="35" cy="20" r="5"></circle>
                             </svg>
                         </button>
+                        <div id="dropdownProfitMonth" class="z-10 hidden bg-gray-100 rounded-lg shadow">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
+                        </div>
                     </div>
                     <p class="mb-2 text-base text-gray-600">Total profit of the month</p>
                     <div class="flex-grow">
