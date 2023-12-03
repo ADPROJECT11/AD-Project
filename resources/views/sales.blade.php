@@ -45,7 +45,8 @@
             <div class="flex mx-6 mt-12" id="sales">
                 <div class="flex flex-col px-6 py-6 bg-white shadow-md w-full rounded-xl">
                     <h1 class="text-2xl font-bold">Sales</h1>
-                    <div
+                    <div>
+                    </div>
                 </div>
             </div>
         </main>
