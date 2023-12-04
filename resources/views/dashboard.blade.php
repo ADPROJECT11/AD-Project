@@ -43,7 +43,7 @@
 
         <main class="flex flex-col w-full h-full">
             <div class="flex" id="top-3">
-                <div class="flex flex-row justify-start items-center mt-12 mx-6 gap-6 w-full h-full">
+                <div class="flex flex-row justify-start items-center mt-12 px-6 gap-6 w-full h-full">
                     <div class="flex flex-col px-6 py-6 bg-white shadow-md w-1/3 rounded-xl">
                         <div class="w-full flex justify-between items-center">
                             <h1 class="text-2xl font-bold">Sales</h1>
@@ -100,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="flex mx-6 mt-12" id="chart">
+            <div class="flex px-6 mt-12" id="chart">
                 <div class="flex flex-col px-6 py-6 bg-white shadow-md w-full rounded-xl">
                     <div class="w-full flex justify-between items-center">
                         <h1 class="text-2xl font-bold">Profit of Months</h1>

@@ -54,8 +54,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/dashboard1', function () {
-    return view('adminmenu');
+Route::get('/orderlist', function () {
+    return view('orderlist');
 });
 
 Route::get('/dashboard/sales', function () {
