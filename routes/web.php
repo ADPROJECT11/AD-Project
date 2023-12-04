@@ -58,6 +58,10 @@ Route::get('/orderlist', function () {
     return view('orderlist');
 });
 
+Route::get('/orderlist2', function () {
+    return view('orderlist2');
+});
+
 Route::get('/dashboard/sales', function () {
     return view('sales');
 });
