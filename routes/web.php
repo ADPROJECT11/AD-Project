@@ -58,8 +58,12 @@ Route::get('/orderlist', function () {
     return view('orderlist');
 });
 
-Route::get('/orderlist2', function () {
-    return view('orderlist2');
+Route::get('/orderlist/preparing', function () {
+    return view('preparing');
+});
+
+Route::get('/orderlist/completed', function () {
+    return view('completed');
 });
 
 Route::get('/dashboard/sales', function () {

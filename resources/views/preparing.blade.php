@@ -28,7 +28,7 @@
 <body class="bg-grey-200">
     <div class="flex flex-row">
         <div class="flex flex-row justify-start w-[25%]">
-            <div class="w-[2%] h-full fixed bg-gradient-to-b from-pigment-indigo-500 to-pigment-indigo-400" id="purplearea"></div>
+            <div class="w-[2%] h-full fixed bg-gradient-to-b from-aqua-green-500 to-aqua-green-400" id="purplearea"></div>
             <div class="flex flex-col w-[18%] ml-[2%] h-full fixed bg-white">
                 <div class="flex justify-center items-center font-script text-[40px] text-pigment-indigo-500 text-center h-1/4" id="molekcafe">Molek</br>Cafe</div>
                 <div class="flex flex-col text-black h-3/4">
@@ -42,17 +42,17 @@
         </div>
 
         <div class="flex flex-col w-full h-full">
-            <header class="flex fixed justify-center items-center bg-pigment-indigo-400 w-[80%] h-[120px]">
-                <div class="flex flex-row justify-center items-center px-[5px] gap-[5px] rounded-lg bg-pigment-indigo-600 w-[452px] h-[70px]">
-                    <a href="#"><button type="button" class="flex flex-col justify-center items-center text-lg font-bold rounded-lg bg-pigment-indigo-200 w-36 h-[60px]">Pending<div class="-mt-2 text-2xl text-pigment-indigo-600" id="pending">0</div></button></a>
-                    <a href="/orderlist/preparing"><button type="button" class="flex flex-col justify-center items-center text-lg font-bold rounded-lg text-white w-36 h-[60px]">Preparing<div class="-mt-2 text-2xl text-pigment-indigo-200" id="preparing">0</div></button></a>
-                    <a href="/orderlist/completed"><button type="button" class="flex flex-col justify-center items-center text-lg font-bold rounded-lg text-white w-36 h-[60px]">Completed<div class="-mt-2 text-2xl text-pigment-indigo-200" id="completed">0</div></button></a>
+            <header class="flex fixed justify-center items-center bg-aqua-green-500 w-[80%] h-[120px]">
+                <div class="flex flex-row justify-center items-center px-[5px] gap-[5px] rounded-lg bg-aqua-green-400 w-[452px] h-[70px]">
+                    <a href="/orderlist"><button type="button" class="flex flex-col justify-center items-center text-lg font-bold rounded-lg w-36 h-[60px]">Pending<div class="-mt-2 text-2xl" id="pending">0</div></button></a>
+                    <a href="#"><button type="button" class="flex flex-col justify-center items-center text-lg font-bold text-white rounded-lg bg-aqua-green-600 w-36 h-[60px]">Preparing<div class="-mt-2 text-2xl" id="preparing">0</div></button></a>
+                    <a href="/orderlist/completed"><button type="button" class="flex flex-col justify-center items-center text-lg font-bold rounded-lg w-36 h-[60px]">Completed<div class="-mt-2 text-2xl" id="completed">0</div></button></a>
                 </div>
             </header>
 
             <main class="grid grid-cols-2 justify-between items-center my-12 px-12 pt-[120px] gap-x-24 gap-y-12 w-full h-full">
-                <div class="flex flex-col px-6 py-6 bg-pigment-indigo-400 shadow-md rounded-3xl">
-                    <h1 class="text-3xl text-white font-bold">Table 1</h1>
+                <div class="flex flex-col px-6 py-6 bg-aqua-green-500 shadow-md rounded-3xl">
+                    <h1 class="text-3xl font-bold">Table 1</h1>
                     <div class="flex flex-col justify-center items-start mt-6 bg-white rounded-xl w-full">
                         <div class="px-4 pt-4">
                             <div class="mb-4">
@@ -65,16 +65,11 @@
                                 <p class="mx-2 italic text-grey-700">+ No sauce</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row justify-between items-center mt-6">
-                        <a href="/orderlist/edit"><button class="inline-block py-2 text-center text-xl font-bold bg-pigment-indigo-100 border-4 border-pigment-indigo-500 text-pigment-indigo-500 rounded-lg shadow-md w-36">Edit</button></a>
-                        <button type="submit" class="inline-block py-2 text-center text-xl font-bold bg-pigment-indigo-500 border-4 border-pigment-indigo-800 text-white rounded-lg shadow-md w-36">Approve</button>
                     </div>
                 </div>
 
-                <div class="flex flex-col px-6 py-6 bg-pigment-indigo-400 shadow-md rounded-3xl">
-                    <h1 class="text-3xl text-white font-bold">Table 2</h1>
+                <div class="flex flex-col px-6 py-6 bg-aqua-green-500 shadow-md rounded-3xl">
+                    <h1 class="text-3xl font-bold">Table 2</h1>
                     <div class="flex flex-col justify-center items-start mt-6 bg-white rounded-xl w-full">
                         <div class="px-4 pt-4">
                             <div class="mb-4">
@@ -87,16 +82,11 @@
                                 <p class="mx-2 italic text-grey-700">+ No sauce</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row justify-between items-center mt-6">
-                        <a href="/orderlist/edit"><button class="inline-block py-2 text-center text-xl font-bold bg-pigment-indigo-100 border-4 border-pigment-indigo-500 text-pigment-indigo-500 rounded-lg shadow-md w-36">Edit</button></a>
-                        <button type="submit" class="inline-block py-2 text-center text-xl font-bold bg-pigment-indigo-500 border-4 border-pigment-indigo-800 text-white rounded-lg shadow-md w-36">Approve</button>
                     </div>
                 </div>
 
-                <div class="flex flex-col px-6 py-6 bg-pigment-indigo-400 shadow-md rounded-3xl">
-                    <h1 class="text-3xl text-white font-bold">Table 3</h1>
+                <div class="flex flex-col px-6 py-6 bg-aqua-green-500 shadow-md rounded-3xl">
+                    <h1 class="text-3xl font-bold">Table 3</h1>
                     <div class="flex flex-col justify-center items-start mt-6 bg-white rounded-xl w-full">
                         <div class="px-4 pt-4">
                             <div class="mb-4">
@@ -109,15 +99,13 @@
                                 <p class="mx-2 italic text-grey-700">+ No sauce</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row justify-between items-center mt-6">
-                        <a href="/orderlist/edit"><button type="button" class="inline-block py-2 text-center text-xl font-bold bg-pigment-indigo-100 border-4 border-pigment-indigo-500 text-pigment-indigo-500 rounded-lg shadow-md w-36">Edit</button></a>
-                        <button type="submit" class="inline-block py-2 text-center text-xl font-bold bg-pigment-indigo-500 border-4 border-pigment-indigo-800 text-white rounded-lg shadow-md w-36">Approve</button>
                     </div>
                 </div>
             </main>
+
         </div>
     </div>
+
 </body>
+
 </html>

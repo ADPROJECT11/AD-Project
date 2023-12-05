@@ -26,14 +26,14 @@
     <title>Dashboard</title>
 </head>
 
-<body class="bg-gray-200">
+<body class="bg-grey-200">
     <div class="flex flex-row">
         <div class="flex flex-row justify-start w-[25%]">
             <div class="w-[2%] h-full fixed bg-gradient-to-b from-pigment-indigo-500 to-pigment-indigo-400" id="purplearea"></div>
             <div class="flex flex-col w-[18%] ml-[2%] h-full fixed bg-white">
                 <div class="flex justify-center items-center font-script text-[40px] text-pigment-indigo-500 text-center h-1/4" id="molekcafe">Molek</br>Cafe</div>
                 <div class="flex flex-col text-black h-3/4">
-                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl bg-gray-200" href="#"><img class="mr-[10px]" src="{{ asset('image/reservation.png')}}" width="35px" height="35px">Dashboard</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl bg-grey-200" href="#"><img class="mr-[10px]" src="{{ asset('image/reservation.png')}}" width="35px" height="35px">Dashboard</a>
                     <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="adminmenu"><img class="mr-[10px]" src="{{ asset('image/menu.png')}}" width="35px" height="35px">Menu</a>
                     <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="account"><img class="mr-[10px]" src="{{ asset('image/account.png')}}" width="35px" height="35px">Account</a>
                     <a class="flex flex-row w-full h-1/4 px-[15%] justify-center items-center font-bold text-[25px]" href="logout"><img class="mr-[10px]" src="{{ asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
@@ -48,17 +48,17 @@
                         <div class="w-full flex justify-between items-center">
                             <h1 class="text-2xl font-bold">Sales</h1>
                             <button type="button" id="saleButton" data-dropdown-toggle="dropdownSale">
-                                <svg class="w-8 h-8 fill-gray-400" viewBox="0 0 32 32">
+                                <svg class="w-8 h-8 fill-grey-400" viewBox="0 0 32 32">
                                     <circle cx="16" cy="16" r="2"></circle>
                                     <circle cx="10" cy="16" r="2"></circle>
                                     <circle cx="22" cy="16" r="2"></circle>
                                 </svg>
                             </button>
-                            <div id="dropdownSale" class="z-10 hidden bg-gray-100 rounded-lg shadow">
-                                <a href="/dashboard/sales" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
+                            <div id="dropdownSale" class="z-10 hidden bg-grey-100 rounded-lg shadow">
+                                <a href="/dashboard/sales" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                             </div>
                         </div>
-                        <p class="text-base text-gray-600">Total sales of this month</p>
+                        <p class="text-base text-grey-600">Total sales of this month</p>
                         <h1 class="text-3xl mt-2 font-bold">$10000.00</h1>
                     </div>
 
@@ -66,17 +66,17 @@
                         <div class="w-full flex justify-between items-center">
                             <h1 class="text-2xl font-bold">Expense</h1>
                             <button type="button" id="expenseButton" data-dropdown-toggle="dropdownExpense">
-                                <svg class="w-8 h-8 fill-gray-400" viewBox="0 0 32 32">
+                                <svg class="w-8 h-8 fill-grey-400" viewBox="0 0 32 32">
                                     <circle cx="16" cy="16" r="2"></circle>
                                     <circle cx="10" cy="16" r="2"></circle>
                                     <circle cx="22" cy="16" r="2"></circle>
                                 </svg>
                             </button>
-                            <div id="dropdownExpense" class="z-10 hidden bg-gray-100 rounded-lg shadow">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
+                            <div id="dropdownExpense" class="z-10 hidden bg-grey-100 rounded-lg shadow">
+                                <a href="#" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                             </div>
                         </div>
-                        <p class="text-base text-gray-600">Total expense of this month</p>
+                        <p class="text-base text-grey-600">Total expense of this month</p>
                         <h1 class="text-3xl mt-2 font-bold">$4000.00</h1>
                     </div>
 
@@ -84,17 +84,17 @@
                         <div class="w-full flex justify-between items-center">
                             <h1 class="text-2xl font-bold">Profit</h1>
                             <button type="button" id="profitButton" data-dropdown-toggle="dropdownProfit">
-                                <svg class="w-8 h-8 fill-gray-400" viewBox="0 0 32 32">
+                                <svg class="w-8 h-8 fill-grey-400" viewBox="0 0 32 32">
                                     <circle cx="16" cy="16" r="2"></circle>
                                     <circle cx="10" cy="16" r="2"></circle>
                                     <circle cx="22" cy="16" r="2"></circle>
                                 </svg>
                             </button>
-                            <div id="dropdownProfit" class="z-10 hidden bg-gray-100 rounded-lg shadow">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
+                            <div id="dropdownProfit" class="z-10 hidden bg-grey-100 rounded-lg shadow">
+                                <a href="#" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                             </div>
                         </div>
-                        <p class="text-base text-gray-600">Total profit of this month</p>
+                        <p class="text-base text-grey-600">Total profit of this month</p>
                         <h1 class="text-3xl mt-2 font-bold">$6000.00</h1>
                     </div>
                 </div>
@@ -105,17 +105,17 @@
                     <div class="w-full flex justify-between items-center">
                         <h1 class="text-2xl font-bold">Profit of Months</h1>
                         <button type="button" id="profitMonthButton" data-dropdown-toggle="dropdownProfitMonth">
-                            <svg class="w-8 h-8 fill-gray-400" viewBox="0 0 50 50">
+                            <svg class="w-8 h-8 fill-grey-400" viewBox="0 0 50 50">
                                 <circle cx="20" cy="20" r="5"></circle>
                                 <circle cx="5" cy="20" r="5"></circle>
                                 <circle cx="35" cy="20" r="5"></circle>
                             </svg>
                         </button>
-                        <div id="dropdownProfitMonth" class="z-10 hidden bg-gray-100 rounded-lg shadow">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-200 hover:rounded-lg ">View More</a>
+                        <div id="dropdownProfitMonth" class="z-10 hidden bg-grey-100 rounded-lg shadow">
+                            <a href="#" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                         </div>
                     </div>
-                    <p class="mb-2 text-base text-gray-600">Total profit of the month</p>
+                    <p class="mb-2 text-base text-grey-600">Total profit of the month</p>
                     <div class="flex-grow">
                         <canvas id="dashboard-card-01" width="848" height="400"></canvas>
                     </div>

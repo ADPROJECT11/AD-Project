@@ -31,7 +31,7 @@
     <title>Menu</title>
 </head>
 
-<body class="bg-gray-200 ">
+<body class="bg-grey-200 ">
     <div class="w-full px-6 py-4 shadow-md bg-gradient-to-r from-pigment-indigo-500 to-pigment-indigo-400">
         <div class="return">
             <a href=cusmenu><img src="{{ asset('image/return.png')}}" width="30px" height="30px"></a>
@@ -49,13 +49,13 @@
                 <h2 class="text-sm font-bold">RM 13.00</h2>
             </div>
 
-            <hr class="w-full mx-auto my-3 h-1 bg-gray-200 border-0 rounded">
+            <hr class="w-full mx-auto my-3 h-1 bg-grey-200 border-0 rounded">
 
             <div class="w-full">
                 <div class="flex flex-row justify-between">
                     <div>
                         <h2 class="text-xl font-bold">Add Topping</h1>
-                            <p class="text-sm text-gray-600">Select one of the options</p>
+                            <p class="text-sm text-grey-600">Select one of the options</p>
                     </div>
                     <div class="w-20 my-auto bg-pigment-indigo-500 shadow-md max-w-md rounded-2xl">
                         <p class="text-center text-white text-sm my-1">Required</p>
@@ -73,12 +73,12 @@
                 </form>
             </div>
 
-            <hr class="w-full mx-auto my-3 h-1 bg-gray-200 border-0 rounded">
+            <hr class="w-full mx-auto my-3 h-1 bg-grey-200 border-0 rounded">
 
             <div class="w-full">
                 <div class="flex flex-row justify-between">
                     <h2 class="text-xl font-bold">Add-On</h1>
-                        <div class="w-20 my-auto bg-gray-500 shadow-md max-w-md rounded-2xl">
+                        <div class="w-20 my-auto bg-grey-500 shadow-md max-w-md rounded-2xl">
                             <p class="text-center text-white text-sm my-1">Optional</p>
                         </div>
                 </div>
@@ -94,19 +94,19 @@
                         <label class="ml-2 text-lg align-middle" for="addon4">Add French Fries</label><br>
                     </form>
                     <div class="mt-3 text-center align-middle">
-                        <p class="text-gray-700 leading-7">+ RM 2.00</p>
-                        <p class="text-gray-700 leading-7">+ RM 3.00</p>
-                        <p class="text-gray-700 leading-7">+ RM 1.00</p>
-                        <p class="text-gray-700 leading-7">+ RM 2.00</p>
+                        <p class="text-grey-700 leading-7">+ RM 2.00</p>
+                        <p class="text-grey-700 leading-7">+ RM 3.00</p>
+                        <p class="text-grey-700 leading-7">+ RM 1.00</p>
+                        <p class="text-grey-700 leading-7">+ RM 2.00</p>
                     </div>
                 </div>
             </div>
 
-            <hr class="w-full mx-auto my-3 h-1 bg-gray-200 border-0 rounded">
+            <hr class="w-full mx-auto my-3 h-1 bg-grey-200 border-0 rounded">
 
             <div class="w-full">
                 <h2 class="text-xl font-bold">Special Request</h1>
-                    <p class="text-sm text-gray-600">Please let us know if you are allergic to any anything or require us to avoid anything.</p>
+                    <p class="text-sm text-grey-600">Please let us know if you are allergic to any anything or require us to avoid anything.</p>
                     <form class="mt-3" action="/request.php">
                         <textarea class="w-full h-20 p-2 border-2 border-pigment-indigo-400 rounded-md focus:border-pigment-indigo-500" name="request" placeholder="e.g. No peanut"></textarea>
                     </form>
