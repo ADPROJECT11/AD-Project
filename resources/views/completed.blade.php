@@ -50,7 +50,7 @@
                 </div>
             </header>
 
-            <main class="grid grid-cols-2 justify-between items-center my-12 px-12 pt-[120px] gap-x-24 gap-y-12 w-full h-full">
+            <main class="grid grid-cols-2 justify-between items-center my-12 px-12 pt-[120px] gap-x-12 gap-y-12 w-full h-full">
                 <div class="flex flex-col px-6 py-6 bg-grey-500 shadow-md rounded-3xl">
                     <h1 class="text-3xl font-bold">Table 1</h1>
                     <div class="flex flex-col justify-center items-start mt-6 bg-white rounded-xl w-full">

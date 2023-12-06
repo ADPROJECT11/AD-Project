@@ -54,6 +54,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/dashboard/sales', function () {
+    return view('sales');
+});
+
 Route::get('/orderlist', function () {
     return view('orderlist');
 });
@@ -66,8 +70,8 @@ Route::get('/orderlist/completed', function () {
     return view('completed');
 });
 
-Route::get('/dashboard/sales', function () {
-    return view('sales');
+Route::get('/orderlist/edit', function () {
+    return view('editorder');
 });
 
 /*
