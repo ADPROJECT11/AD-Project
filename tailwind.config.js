@@ -51,7 +51,6 @@ export default {
                 800: "#4C4950",
                 900: "#242226",
             },
-            white: "#FFFFFF",
         },
     },
 

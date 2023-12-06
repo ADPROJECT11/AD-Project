@@ -38,6 +38,10 @@ Route::get('/viewcart', function () {
     return view('cart');
 });
 
+Route::get('/viewcart/history', function () {
+    return view('carthistory');
+});
+
 Route::get('/phptest', function () {
     return view('cart1');
 });
