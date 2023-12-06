@@ -64,7 +64,34 @@ Route::get('/cart', function () {
     return view ('cart');
 });
 
+Route::get('/cheforderlist', function () {
+    return view ('cheforderlist');
+});
+
+Route::get('/chefnotify', function () {
+    return view ('chefnotify');
+});
+
+Route::get('/chefchecknotify', function () {
+    return view ('chefchecknotify');
+});
+
+Route::get('/chefaddnotify', function () {
+    return view ('chefaddnotify');
+});
+
+Route::get('/staffnotify', function () {
+    return view ('staffnotify');
+});
+
+Route::get('/try', function () {
+    return view ('try');
+});
+
 Route::post('reservation', [ReservationController::class,'save']);
+Route::get('small', [ReservationController::class,'small']);
+Route::get('large', [ReservationController::class,'large']);
+Route::get('all', [ReservationController::class,'all']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

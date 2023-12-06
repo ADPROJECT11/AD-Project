@@ -1,0 +1,106 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 100%
+}
+
+.topbar{
+    height:9%;
+    background: linear-gradient(90deg, #4F007D 0%, #9930C8 100%);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#back{
+    margin-left: 2%;
+}
+
+#add{
+    margin-right: 3%;
+}
+
+.content{
+    background-color: #EFECF0;
+    height: 91%;
+}
+
+.empty1{
+    height: 3%;
+}
+
+.date{
+    display: flex;
+    justify-content: left;
+}
+
+#p3{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3%;
+}
+
+.box{
+    height: 11%;
+    width: 25%;
+    margin-left: 3%;
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: #4F007D;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.food{
+    width: 100%;
+}
+
+
+#p4{
+    margin: 0%;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+#p5{
+    margin: 0%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #51017F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #p4{
+        margin-top: 12%;
+    }
+
+    #p5{
+        margin-top: 10%;
+    }
+
+    .box{
+        width: 27%;
+    }
+
+    .info{
+        margin-right: 3%;
+    }
+  }

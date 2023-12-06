@@ -1,0 +1,228 @@
+html{
+    height: 100%;
+    margin:0%;
+}
+body{
+    background-color: #EFECF0;
+    margin:0%;
+    height:100%;
+}
+
+.purplearea{
+    width: 2.0%;
+    height: 100%;
+    background: linear-gradient(180deg, #4F007D 0%, #9930C8 100%);
+    position: fixed;
+}
+
+.navbar{
+    width: 18%;
+    position:fixed;
+    left: 2.0%;
+    background-color: white;
+    height: 100%;
+}
+
+.main{
+    padding: 0% 2% 2% 22%;
+    width: 76%;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.whitearea{
+    bottom:0%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.molekcafe{
+    font-family: 'Segoe Script', sans-serif;
+    font-size: 40px;
+    color: #4F007D;
+    text-align: center;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icon a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+#icon{
+    white-space: nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;
+    padding-top: 4px;
+}
+
+.logout{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logout a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.logout a:hover{
+    color: #17E89B;
+}
+
+.logout img{
+    margin-right: 10px;
+}
+
+#i1, #i2, #i3, #i4{
+    width: 85%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15%;
+}
+
+#i4{
+    background-color: #EFECF0;
+}
+
+#i1:hover, #i2:hover, #i3:hover, #i4:hover{
+    background-color: rgb(186, 221, 221);
+}
+
+.empty1{
+    height: 5%;
+}
+
+.topbar{
+    height:9%;
+    background: linear-gradient(90deg, #4F007D 0%, #9930C8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p1{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date{
+    display: flex;
+    justify-content: left;
+}
+
+#p3{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3%;
+}
+
+.box{
+    height: 11%;
+    width: 25%;
+    margin-left: 3%;
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: #4F007D;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.food{
+    width: 100%;
+}
+
+
+#p4{
+    margin: 0%;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+#p5{
+    margin: 0%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #51017F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .navbar{
+        width: 23%;
+    }
+
+    .main{
+        padding: 0% 2% 2% 27%;
+        width: 71%;
+    }
+
+    #i1, #i2, #i3, #i4{
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    #p4{
+        margin-top: 3%;
+    }
+
+    #p5{
+        margin-top: 2%;
+    }
+
+    .box{
+        height: 8%;
+        width: 90%;
+    }
+
+    .info{
+        margin-right: 3%;
+    }
+
+  }

@@ -51,7 +51,7 @@
 
             <div class="table">
                 <img src="{{ asset('image/table.png')}}" width="50px" height="50px" style="margin-right:5%;"id="tableimg">
-                <select id="table" name="table" style="min-height:50px; min-width:110px;" onchange="large()">
+                <select id="table" name="table" style="min-height:55px; min-width:120px;" onchange="large()">
                     <option value="Large" >Large</option>
                     <option value="Small">Small</option>
                     <option value="All">All</option>

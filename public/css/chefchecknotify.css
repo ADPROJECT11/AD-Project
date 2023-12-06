@@ -1,0 +1,116 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 92%
+}
+
+.topbar{
+    height:9%;
+    background: linear-gradient(90deg, #4F007D 0%, #9930C8 100%);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#back{
+    margin-left: 2%;
+}
+
+#add{
+    margin-right: 3%;
+}
+
+.content{
+    background-color: #EFECF0;
+    height: 91%;
+}
+
+.empty1{
+    height: 1%;
+}
+
+#p1{
+    margin: 0%;
+    margin-top: 3%;
+    font-size: 46px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3%;
+}
+
+#u1{
+    border: 2px solid;
+}
+
+.datestatus{
+    display: flex;
+    justify-content: space-between;
+}
+
+#date{
+    margin: 0%;
+    margin-left: 3%;
+    font-size: 30px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#status{
+    margin: 0%;
+    margin-right: 3%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #51017F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#p2{
+    margin: 0%;
+    margin-top: 1%;
+    font-size: 46px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 3%;
+}
+
+#textbox{
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.message input[type="text"]{
+    border-radius: 20px;
+    border: 3px solid;
+    border-color: gray;
+    height: 300px;
+    width: 94%;
+}
+
+
+.bottombar{
+    height: 9%;
+    width: 100%;
+    background: linear-gradient(90deg, #4F007D 0%, #9930C8 100%);
+}
+
+#p3{
+    margin: 0%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #textbox{
+        margin-top: 3%;
+    }
+  }

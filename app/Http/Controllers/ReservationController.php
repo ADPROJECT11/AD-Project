@@ -23,4 +23,19 @@ class ReservationController extends Controller
         $Reservation->save();
         return redirect()->route('reservation_cus2');
     }
+
+    public function small(){
+        $reservation = Reservation::where("table","small")->get();
+        return view('reservation_staff', compact('reservation'));
+    }
+
+    public function large(){
+        $reservation = Reservation::where("table","large")->get();
+        return view('reservation_staff', compact('reservation'));
+    }
+
+    public function all(){
+        $reservation = Reservation::all();
+        return view('reservation_staff', compact('reservation'));
+    }
 }
