@@ -41,15 +41,21 @@
             </div>
         </div>
 
-        <main class="flex flex-col w-full h-full">
-            <div class="flex mx-6 mt-12" id="sales">
+        <div class="flex flex-col w-full h-full">
+            <header class="fixed w-full px-6 py-4 shadow-md bg-gradient-to-r from-pigment-indigo-500 to-pigment-indigo-400">
+                <div class="return">
+                    <a href=/cusmenu><img src="{{ asset('image/return.png')}}" width="30px" height="30px"></a>
+                </div>
+            </header>
+
+            <main class="flex px-6 pt-24" id="sales">
                 <div class="flex flex-col px-6 py-6 bg-white shadow-md w-full rounded-xl">
                     <h1 class="text-2xl font-bold">Sales</h1>
                     <div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
 </body>
 
