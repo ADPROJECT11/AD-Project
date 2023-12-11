@@ -20,18 +20,7 @@
                 left: 0;
             }
         }
-
-        @media print {
-            body {
-                print-color-adjust: exact;
-            }
-        }
     </style>
-    <script>
-        function printPDF() {
-            print();
-        }
-    </script>
     @vite(['resources/css/app.css','resources/js/app.js'])
     <!-- Load icon library -->
     <title>Sales</title>
@@ -78,7 +67,7 @@
                         </div>
                         <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
                             <div class="flex items-center space-x-3 w-full md:w-auto">
-                                <button id="generatePDF" class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200" type="button" onclick="printPDF()">
+                                <button id="generatePDF" class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200" type="button" onclick="print();">
                                     Generate PDF
                                 </button>
                                 <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown" class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200" type="button">
@@ -91,27 +80,19 @@
                                     </svg>
                                 </button>
                                 <div id="filterDropdown" class="z-10 hidden w-48 p-3 bg-white rounded-lg shadow">
-                                    <h6 class="mb-3 text-sm font-medium text-gray-900">Choose brand</h6>
+                                    <h6 class="mb-3 text-sm font-medium text-gray-900">Choose category</h6>
                                     <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
                                         <li class="flex items-center">
-                                            <input id="apple" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="apple" class="ml-2 text-sm font-medium text-gray-900">Apple (56)</label>
+                                            <input id="food" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
+                                            <label for="food" class="ml-2 text-sm font-medium text-gray-900">Food</label>
                                         </li>
                                         <li class="flex items-center">
-                                            <input id="fitbit" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="fitbit" class="ml-2 text-sm font-medium text-gray-900">Microsoft (16)</label>
+                                            <input id="beverage" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
+                                            <label for="beverage" class="ml-2 text-sm font-medium text-gray-900">Beverage</label>
                                         </li>
                                         <li class="flex items-center">
-                                            <input id="razor" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="razor" class="ml-2 text-sm font-medium text-gray-900">Razor (49)</label>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <input id="nikon" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="nikon" class="ml-2 text-sm font-medium text-gray-900">Nikon (12)</label>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <input id="benq" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="benq" class="ml-2 text-sm font-medium text-gray-900">BenQ (74)</label>
+                                            <input id="other" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
+                                            <label for="other" class="ml-2 text-sm font-medium text-gray-900">Other</label>
                                         </li>
                                     </ul>
                                 </div>
