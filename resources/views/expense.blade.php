@@ -23,7 +23,7 @@
     </style>
     @vite(['resources/css/app.css','resources/js/app.js'])
     <!-- Load icon library -->
-    <title>Sales</title>
+    <title>Expense</title>
 </head>
 
 <body class="bg-gray-200 print:bg-white">
@@ -50,7 +50,7 @@
 
             <main class="flex px-6 pt-24 pb-6 print:pt-0 print:pb-0" id="sales">
                 <div class="flex flex-col px-6 py-6 bg-white shadow-md w-full rounded-xl print:shadow-none">
-                    <h1 class="px-4 text-3xl font-bold">Sales</h1>
+                    <h1 class="px-4 text-3xl font-bold">Expense</h1>
                     <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
                         <div class="w-full md:w-1/2">
                             <form class="flex items-center">
@@ -84,15 +84,15 @@
                                     <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
                                         <li class="flex items-center">
                                             <input id="food" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="food" class="ml-2 text-sm font-medium text-gray-900">Food</label>
+                                            <label for="food" class="ml-2 text-sm font-medium text-gray-900">Salary</label>
                                         </li>
                                         <li class="flex items-center">
                                             <input id="beverage" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="beverage" class="ml-2 text-sm font-medium text-gray-900">Beverage</label>
+                                            <label for="beverage" class="ml-2 text-sm font-medium text-gray-900">Ingredient</label>
                                         </li>
                                         <li class="flex items-center">
                                             <input id="other" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 focus:ring-2">
-                                            <label for="other" class="ml-2 text-sm font-medium text-gray-900">Other</label>
+                                            <label for="other" class="ml-2 text-sm font-medium text-gray-900">Utility</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -103,8 +103,8 @@
                         <table class="w-full text-sm text-left text-gray-500">
                             <thead class="text-xs text-gray-700 uppercase rounded-t-xl bg-gray-300">
                                 <tr>
-                                    <th scope="col" class="px-4 py-3 rounded-tl-xl">Product ID</th>
-                                    <th scope="col" class="px-4 py-3">Product Name</th>
+                                    <th scope="col" class="px-4 py-3 rounded-tl-xl">ID</th>
+                                    <th scope="col" class="px-4 py-3">Name</th>
                                     <th scope="col" class="px-4 py-3">Category</th>
                                     <th scope="col" class="px-4 py-3">Quantity</th>
                                     <th scope="col" class="px-4 py-3">Value</th>
@@ -113,83 +113,83 @@
                             </thead>
                             <tbody class="bg-gray-50">
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F01</th>
-                                    <td class="px-4 py-3">Food 1</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">300</td>
-                                    <td class="px-4 py-3">RM 890</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">S01</th>
+                                    <td class="px-4 py-3">Name 1</td>
+                                    <td class="px-4 py-3">Salary</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3">RM 1900</td>
                                     <td class="px-4 py-3">01/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F02</th>
-                                    <td class="px-4 py-3">Food 2</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">200</td>
-                                    <td class="px-4 py-3">RM 1099</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">S02</th>
+                                    <td class="px-4 py-3">Name 2</td>
+                                    <td class="px-4 py-3">Salary</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3">RM 2000</td>
                                     <td class="px-4 py-3">15/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F03</th>
-                                    <td class="px-4 py-3">Food 3</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">123</td>
-                                    <td class="px-4 py-3">RM 999</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">S03</th>
+                                    <td class="px-4 py-3">Name 3</td>
+                                    <td class="px-4 py-3">Salary</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3">RM 2000</td>
                                     <td class="px-4 py-3">28/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F04</th>
-                                    <td class="px-4 py-3">Food 4</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">457</td>
-                                    <td class="px-4 py-3">RM 1109</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">I11</th>
+                                    <td class="px-4 py-3">Ingredient 1</td>
+                                    <td class="px-4 py-3">Ingredient</td>
+                                    <td class="px-4 py-3">100</td>
+                                    <td class="px-4 py-3">RM 1800</td>
                                     <td class="px-4 py-3">07/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F05</th>
-                                    <td class="px-4 py-3">Food 5</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">56</td>
-                                    <td class="px-4 py-3">RM 299</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">I12</th>
+                                    <td class="px-4 py-3">Ingredient 2</td>
+                                    <td class="px-4 py-3">Ingredient</td>
+                                    <td class="px-4 py-3">100</td>
+                                    <td class="px-4 py-3">RM 599</td>
                                     <td class="px-4 py-3">21/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F06</th>
-                                    <td class="px-4 py-3">Food 6</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">78</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">I13</th>
+                                    <td class="px-4 py-3">Ingredient 3</td>
+                                    <td class="px-4 py-3">Ingredient</td>
+                                    <td class="px-4 py-3">120</td>
                                     <td class="px-4 py-3">RM 799</td>
                                     <td class="px-4 py-3">03/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">F07</th>
-                                    <td class="px-4 py-3">Food 7</td>
-                                    <td class="px-4 py-3">Food</td>
-                                    <td class="px-4 py-3">200</td>
-                                    <td class="px-4 py-3">RM 699</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">I14</th>
+                                    <td class="px-4 py-3">Ingredient 4</td>
+                                    <td class="px-4 py-3">Ingredient</td>
+                                    <td class="px-4 py-3">300</td>
+                                    <td class="px-4 py-3">RM 900</td>
                                     <td class="px-4 py-3">14/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">B01</th>
-                                    <td class="px-4 py-3">Beverage 1</td>
-                                    <td class="px-4 py-3">Beverage</td>
-                                    <td class="px-4 py-3">550</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">U01</th>
+                                    <td class="px-4 py-3">Utility 1</td>
+                                    <td class="px-4 py-3">Utility</td>
+                                    <td class="px-4 py-3">1</td>
                                     <td class="px-4 py-3">RM 399</td>
                                     <td class="px-4 py-3">25/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">B02</th>
-                                    <td class="px-4 py-3">Beverages 2</td>
-                                    <td class="px-4 py-3">Beverage</td>
-                                    <td class="px-4 py-3">665</td>
-                                    <td class="px-4 py-3">RM 699</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">U02</th>
+                                    <td class="px-4 py-3">Utility 2</td>
+                                    <td class="px-4 py-3">Utility</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3">RM 50</td>
                                     <td class="px-4 py-3">09/05/2023</td>
                                 </tr>
                                 <tr class="border-b border-gray-300">
-                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">O01</th>
-                                    <td class="px-4 py-3">Others 1</td>
-                                    <td class="px-4 py-3">Other</td>
-                                    <td class="px-4 py-3">354</td>
-                                    <td class="px-4 py-3">RM 499</td>
+                                    <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">U03</th>
+                                    <td class="px-4 py-3">Utility 3</td>
+                                    <td class="px-4 py-3">Utility</td>
+                                    <td class="px-4 py-3">1</td>
+                                    <td class="px-4 py-3">RM 500</td>
                                     <td class="px-4 py-3">18/05/2023</td>
                                 </tr>
                             </tbody>

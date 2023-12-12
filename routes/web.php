@@ -62,6 +62,14 @@ Route::get('/dashboard/sales', function () {
     return view('sales');
 });
 
+Route::get('/dashboard/expense', function () {
+    return view('expense');
+});
+
+Route::get('/dashboard/profit', function () {
+    return view('profit');
+});
+
 Route::get('/orderlist', function () {
     return view('orderlist');
 });

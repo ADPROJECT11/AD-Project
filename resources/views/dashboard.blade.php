@@ -73,7 +73,7 @@
                                 </svg>
                             </button>
                             <div id="dropdownExpense" class="z-10 hidden bg-grey-100 rounded-lg shadow">
-                                <a href="#" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
+                                <a href="/dashboard/expense" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                             </div>
                         </div>
                         <p class="text-base text-grey-600">Total expense of this month</p>
@@ -91,7 +91,7 @@
                                 </svg>
                             </button>
                             <div id="dropdownProfit" class="z-10 hidden bg-grey-100 rounded-lg shadow">
-                                <a href="#" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
+                                <a href="/dashboard/profit" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                             </div>
                         </div>
                         <p class="text-base text-grey-600">Total profit of this month</p>
@@ -115,7 +115,7 @@
                             <a href="#" class="block px-4 py-2 hover:bg-grey-200 hover:rounded-lg ">View More</a>
                         </div>
                     </div>
-                    <p class="mb-2 text-base text-grey-600">Total profit of the month</p>
+                    <p class="mb-2 text-base text-grey-600">Total profit of the months</p>
                     <div class="flex-grow">
                         <canvas id="dashboard-card-01" width="848" height="400"></canvas>
                     </div>
