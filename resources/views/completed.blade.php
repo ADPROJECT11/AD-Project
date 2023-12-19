@@ -32,11 +32,12 @@
             <div class="flex flex-col w-[18%] ml-[2%] h-full fixed bg-white">
                 <div class="flex justify-center items-center font-script text-[40px] text-pigment-indigo-500 text-center h-1/4" id="molekcafe">Molek</br>Cafe</div>
                 <div class="flex flex-col text-black h-3/4">
-                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="staffmenu"><img class="mr-1" src="{{ asset('image/reservation.png')}}" width="35px" height="35px">Reservation</a>
-                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="menulist"><img src="{{ asset('image/menu.png')}}" width="35px" height="35px">Menu List</a>
-                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl bg-grey-200" href="#"><img src="{{ asset('image/order.png')}}" width="35px" height="35px">Order List</a>
-                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="notification"><img src="{{ asset('image/notification.png')}}" width="35px" height="35px">Notification</a>
-                    <a class="flex flex-row w-full h-1/4 px-[15%] justify-center items-center font-bold text-[25px]" href="logout"><img class="mr-[10px]" src="{{ asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="reservation"><img class="mr-2" src="{{asset('image/reservation.png')}}" width="35px" height="35px">Reservation</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="menulist"><img class="mr-2" src="{{asset('image/menu.png')}}" width="35px" height="35px">Menu List</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl bg-grey-200" href="#"><img class="mr-2" src="{{asset('image/order.png')}}" width="35px" height="35px">Order List</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="notification"><img class="mr-2"" src=" {{asset('image/notification.png')}}" width="35px" height="35px">Notification</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] items-center font-bold text-xl" href="payment"><img class="mr-2" src="{{asset('image/cashier.png')}}" width="35px" height="35px">Payment</a>
+                    <a class="flex flex-row w-full h-1/4 px-[15%] justify-center items-center font-bold text-[25px]" href="logout"><img class="mr-[10px]" src="{{asset('image/logout.png')}}" width="35px" height="35px">LOGOUT</a>
                 </div>
             </div>
         </div>

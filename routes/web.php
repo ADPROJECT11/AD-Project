@@ -86,6 +86,10 @@ Route::get('/orderlist/edit', function () {
     return view('editorder');
 });
 
+Route::get('/payment', function () {
+    return view('payment');
+});
+
 /*
 Route::get('/dashboard', function () {
     return view('dashboard');
